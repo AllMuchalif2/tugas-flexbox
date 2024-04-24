@@ -1,0 +1,162 @@
+body{
+    font-family: "Poppins", sans-serif;
+}
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    /* text-align: center; */
+
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+.header{
+    background: #00A9FF;
+    text-align: center;
+}
+.nav{
+    background: #89CFF3;
+    height: auto;
+}
+.main{
+    background: #A0E9FF;
+    /* height: 1000px; */
+    padding: 40px;
+    font-size: 20px;
+    /* text-align:center ; */
+    
+}
+.main .entries{
+    font-size: 15px;
+    border-radius: 10px;
+    background: #89CFF3;
+    text-align: center;
+    padding: auto;
+}
+.main .ability{
+    border: 2px #89CFF3 solid;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+}
+
+
+.main .ability h6{
+    margin-top: 0;
+    border-radius: 10px;
+    background: #89CFF3;
+}
+.main .ability p{
+    margin-top: 0;
+    top: 0;
+    font-size: 15px;
+}
+
+.aside1{
+    background: #A0E9FF;
+    text-align:center ;
+}
+.aside1 div{
+    display: flex;
+    justify-content: center;
+}
+.aside1 .poketype{
+    height: 30px;
+    width: auto;
+}
+.footer{
+    background: #00A9FF;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+nav ul{
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+a:hover{
+    color: black;
+}
+.icon{
+    width: 50%;
+    height: auto;
+}
+.main h3{
+    text-align:center;
+    margin-top: 0;
+    padding-top: 0;
+    top: 0;
+}
+.aside1 h3{
+    margin-top: 10%;
+
+}
+.type{
+    display: flex;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.typeimg{
+    height: 20px;
+    width: auto;
+}
+
+
+/* tampilan responsive*/
+@media all and (min-width:800px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order:2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+        order: 4;
+    }
+    .main{
+        height: auto;
+    }
+    .type{
+        width: 50%;
+    }
+
+}
+/* tampilan kecil */
+@media all and (min-width:600px){
+    .aside1{
+        flex: 1;
+    }
+    .icon{
+        width: 90%;
+        height: auto;
+    }
+
+    .type{
+        width: 30%;
+    }
+}
